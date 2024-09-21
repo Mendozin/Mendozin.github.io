@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/styleindex.css">
+    <title>Vida Saludable</title>
+    <link rel="shortcut icon" href="imagenesobesidad/gordas.jpeg" type="image/x-icon">
+</head>
+<body>
+    <div class="music">
+        <audio id="miaudio" src="musica/música-para-visualizar-15-minutos.mp3"></audio>
+
+        <button id="btnaudio" onclick="TooggleAudio()">Reproducir</button>
+    
+        <script>
+            let reproduciendo = false;
+    
+            function TooggleAudio(){
+                const audio = 
+                document.getElementById("miaudio");
+                const boton =
+                document.getElementById("btnaudio");
+    
+                if (!reproduciendo) {
+                    audio.play();
+                    boton.textContent = "Pausar";
+                    reproduciendo = true;
+                } else {
+                    audio.pause();
+                    boton.textContent = "Reproducir";
+                    reproduciendo = false;
+                }
+            } 
+        </script>
+    </div>
+    <section id="AN"></section>
+    <header>
+        <div class="navbar">
+            <div id="logo" class="logo">Vida Saludable</div>
+            <!-- <input type="checkbox" id="toggle">
+            <label for="toggle"><img class="menu" src="" alt=""></label>-->
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="index.html">Inicio</a>
+                            <ul>
+                                <li><a href="#help">Descripción general</a></li>
+                                <li><a href="#help-1">Supera tus obstáculos</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="nosotros.html">Nosotros</a>
+                            <ul>
+                                <li><a href="#Noso1">¿Quiénes somos?</a></li>
+                                <li><a href="#Noso2">Visión</a></li>
+                                <li><a href="#Blog">Mision</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="obesidad.html">Obesidad</a>
+                            <ul>
+                                <li><a href="#Acerca">Sintomas</a></li>
+                                <li><a href="#Acerca-1">Causas</a></li>
+                                <li><a href="#Acerca-2">Factores de riesgo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="prevencion.html">Prevencion</a>
+                            <ul>
+                                <li><a href="#">Rutinas</a></li>
+                                <li><a href="#">Videos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            <a href="contacto.html" class="accion-btn">Contacto</a>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Bienvenido</h1>
+            <p>Tome el control de su vida</p>
+            <a href="iniciarsesion.html" class="btn-3">Iniciar Sesion</a>
+        </section>
+    </main>
+    <main>
+        <div class="help">
+            <section id="help">
+                <div class="help-content">
+                    <h2 class="heading">Descripción <span>general</span></h2>
+                    <p>
+                        La obesidad es una enfermedad compleja que consiste en tener demasiada grasa corporal. La obesidad no es solo un problema estético. Es un problema médico que aumenta el riesgo para muchas otras enfermedades y problemas de salud. Estos pueden incluir enfermedades cardíacas, diabetes, presión arterial alta, colesterol alto, enfermedad hepática, apnea del sueño y determinados tipos de cáncer.
+                        <br>
+                        <br>
+                        Hay muchas razones por las que algunas personas tienen dificultad para perder peso. A menudo, la obesidad es el resultado de factores hereditarios, fisiológicos y ambientales, combinados con la alimentación, la actividad física y las opciones de ejercicio.
+                        <br>
+                        <br>
+                        o bueno es que incluso una modesta pérdida de peso puede mejorar o prevenir los problemas de salud relacionados con la obesidad. Una alimentación más saludable, un mayor nivel de actividad física y los cambios de conducta pueden ayudarte a bajar de peso. Los medicamentos recetados y los procedimientos para bajar de peso son otras opciones para tratar la obesidad.
+                    </p>
+                    <a href="#" class="btn-1">Leer más</a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div class="help1">
+        <section id="help-1">
+            <div class="help1-content">
+                <h4 class="heading">Supera tus  <span>obstáculos</span></h4>
+                <p class="txt1">
+                    Identifica tu punto de partida
+                    <br>
+                    <br>
+                    ¿Cuál es el primer paso para dejar la obesidad? 
+                    <br>
+                    No es tan difícil como crees.
+                    <br>
+                    <br>
+                </p>
+                <a href="#" class="btn-2">Leer más</a>
+            </div>
+        </section>
+    </div>
+    <a id="anchor" href="#AN">&#8679;</a>
+    <footer class="footer">
+        <section id="foot">
+            <div class="footer-content">
+                <div class="networks">
+                    <a href="https://www.facebook.com/profile.php?id=61566019595260&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/vidasaludablebridgett?igsh=MTlldWsxczh0ZGlwOA=="><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <h5>Contacto: +52-311-203-44-87</h5>
+                <h5>E-mail: Juliomendozasilva2020@gmail.com</h5>
+                <h5>Direccion: Andros, C. Villa del Prado 26, 63173 Tepic, Nay.</h5>
+                <h5><a href="#">Política de Privacidad 
+                    <br>
+                <span>© VidaSaludable 2024</span></a> </h5>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
